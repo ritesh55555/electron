@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>home page</title>
+</head>
+<body>
+    <h1 style="text-align:center">OCF Resource Tool</h1>
+    <h3>Select Device Type :</h3>
+
+    <form>
+        <div id = 'dev' ></div>
+        <script>
+            let content = ""
+            let devices = ['oic.d.airconditioner' , 'oic.d.airpurifier','oic.d.dishwasher','oic.d.dryer','oic.d.light','oic.d.oven','oic.d.refrigerator','oic.d.robotcleaner','oic.d.sensor','oic.d.smartlock' , 'oic.d.smartplug', 'oic.d.switch','oic.d.thermostat','oic.d.tv','oic.d.washer']
+            for(item of devices){
+                content += '<input type="radio" id=' + item + ' name = "device" value=' + item + '><label for =' + item + '>' + item +  '</label><br>'
+            }
+            document.getElementById("dev").innerHTML = content;
+        </script>
+    </form>
+
+    <button id = "add">Add device</button>
+    <button id = "next">Next</button>
+
+    <script>
+        require('./device.js');
+    </script>
+
+</body>
+</html>
