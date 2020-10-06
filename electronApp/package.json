@@ -10,7 +10,7 @@
   "author": "ritesh",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.0.5",
+    "electron": "^9.3.1",
     "electron-packager": "^15.0.0"
   },
   "dependencies": {}
